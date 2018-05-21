@@ -7,8 +7,8 @@ set(CMAKE_CXX_STANDARD 11)
 find_package(OpenCL REQUIRED)
 include_directories(${OpenCL_INCLUDE_DIRS})
 link_directories(${OpenCL_LIBRARY})
-add_executable (hw01 main.cpp reduce.cl)
-target_link_libraries (reduce ${OpenCL_LIBRARY})
+add_executable (hw01 main.cpp convolution.cl)
+target_link_libraries (hw01 ${OpenCL_LIBRARY})
 
 # copy cl files to binary folder
 FILE(GLOB CL_FILES *.cl)
