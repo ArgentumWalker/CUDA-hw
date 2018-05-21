@@ -25,7 +25,7 @@ int main() {
 		cl::CommandQueue queue(context, devices[0], CL_QUEUE_PROFILING_ENABLE);
 
 		// load opencl source
-		std::ifstream cl_file("reduce.cl");
+		std::ifstream cl_file("convolution.cl");
 		std::string cl_string(std::istreambuf_iterator<char>(cl_file), (std::istreambuf_iterator<char>()));
 		cl::Program::Sources source(1, std::make_pair(cl_string.c_str(),
 			cl_string.length() + 1));
