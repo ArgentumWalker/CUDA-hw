@@ -60,16 +60,12 @@ int main() {
 			int x;
 			input >> x;
 			a.push_back(x);
-			std::cerr << x << " ";
 		}
-		std::cerr << "\n";
 		for (int i = 0; i < m * m; i++) {
 			int x;
 			input >> x;
 			b.push_back(x);
-			std::cerr << x << " ";
 		}
-		std::cerr << "\n";
 		input.close();
 
 		std::vector<double> c(n * n, 0);
