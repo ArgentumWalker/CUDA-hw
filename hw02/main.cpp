@@ -46,7 +46,7 @@ int main() {
 			return 0;
 		}
 
-		size_t const block_size = 4; //TODO: 256
+		size_t const block_size = 256;
 
 
 		std::vector<int> data;
